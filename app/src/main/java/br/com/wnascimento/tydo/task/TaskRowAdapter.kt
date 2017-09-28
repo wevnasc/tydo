@@ -7,7 +7,7 @@ class TaskRowAdapter(val task: Task = Task(), val section: String = "", var isSe
     companion object {
 
         fun buildListTaskBySectionDate(tasks: List<Task>): List<TaskRowAdapter> {
-            val list = tasks.sortedWith(compareBy({ it.date }))
+            val list = tasks.sortedWith(compareBy(Task::date))
             return makeListAdapter(list)
         }
 
