@@ -1,6 +1,6 @@
 # Tydo
  
-simple manager task
+simple task manager
 
 ### Language
 - Kotlin 
