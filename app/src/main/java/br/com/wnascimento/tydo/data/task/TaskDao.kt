@@ -2,6 +2,7 @@ package br.com.wnascimento.tydo.data.task
 
 import android.arch.lifecycle.LiveData
 import android.arch.persistence.room.*
+import br.com.wnascimento.tydo.task.Task
 
 @Dao
 interface TaskDao {
@@ -10,7 +11,7 @@ interface TaskDao {
     fun save(task: Task)
 
     @Query("SELECT * FROM task")
-    fun all() : LiveData<List<Task>>
+    fun all(): LiveData<List<Task>>
 
     @Update
     fun update(task: Task)

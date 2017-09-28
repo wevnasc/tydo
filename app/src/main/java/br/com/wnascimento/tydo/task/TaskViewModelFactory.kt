@@ -5,11 +5,11 @@ import android.arch.lifecycle.ViewModelProvider
 import br.com.wnascimento.tydo.data.task.TaskDao
 
 
-class TaskViewModelFactory(private val taskDao: TaskDao) : ViewModelProvider.Factory{
+class TaskViewModelFactory(private val taskDao: TaskDao) : ViewModelProvider.Factory {
 
     override fun <T : ViewModel?> create(modelClass: Class<T>?): T {
         if (modelClass != null) {
-            if(modelClass.isAssignableFrom(TaskViewModel::class.java)) {
+            if (modelClass.isAssignableFrom(TaskViewModel::class.java)) {
                 return TaskViewModel(taskDao) as T
             }
         }

@@ -1,7 +1,12 @@
 <resources>
     <string name="app_name">tydo</string>
-    <string name="task">Enter your task here!!!</string>
+    <string name="enter_task">Enter your task here!!!</string>
     <string name="description">Description</string>
     <string name="action_send">send</string>
     <string name="action_save">save</string>
+    <string name="title_warning">Warning!</string>
+    <string name="msg_remove_task">You wish remove this task ?</string>
+    <string name="action_yes">Yes</string>
+    <string name="action_no">No</string>
+    <string name="task_date">task date</string>
 </resources>

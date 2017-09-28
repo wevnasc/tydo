@@ -4,8 +4,8 @@ import android.arch.persistence.room.Database
 import android.arch.persistence.room.Room
 import android.arch.persistence.room.RoomDatabase
 import android.content.Context
-import br.com.wnascimento.tydo.data.task.Task
 import br.com.wnascimento.tydo.data.task.TaskDao
+import br.com.wnascimento.tydo.task.Task
 
 @Database(entities = arrayOf(Task::class), version = 1)
 abstract class AppDatabase : RoomDatabase() {
@@ -26,6 +26,6 @@ abstract class AppDatabase : RoomDatabase() {
     }
 
 
-    abstract fun taskDao() : TaskDao
+    abstract fun taskDao(): TaskDao
 
 }
